@@ -73,7 +73,8 @@
 /* Banner section, to be displayed on mobile version */
 .banner {
     height: auto;
-    width: 100%;
+    display:block;
+    width: 20%;
     background-color: white;
     margin: auto;
     overflow: auto;
@@ -91,11 +92,28 @@
     text-decoration: none;
     color: black;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .posts {
         grid-template-columns: 100%;
     }
 }
+
+@media screen and (min-width: 950px) {
+    .brand123 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .banner {
+        display: none;
+        width: 100%;
+        overflow: hidden;
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
 .mainone {
     background-color: white;
     float: left;
@@ -127,12 +145,6 @@
     }
     .top {
         display: none;
-    }
-    .banner {
-        width: 100%;
-        overflow: hidden;
-        padding: 0%;
-        margin: 0%;
     }
     .banner img {
         width: 100%;
@@ -220,7 +232,7 @@
 
 /* footer starts here */
 .links {
-    background-color: black;
+    background-color: dodgerblue;
     width: 100%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
@@ -355,7 +367,7 @@
 }
 .mf-list {
     width: 100%;
-    background-color: black;
+    background-color: dodgerblue;
     height: auto;
     padding: 1%;
     margin: 0;
